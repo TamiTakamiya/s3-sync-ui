@@ -27,7 +27,7 @@ def input():
     epoch = epoch_time(start_date)
     epoch_end = epoch_time(end_date)
     while epoch <= epoch_end:
-        sync_cmd = f"aws s3 sync s3://{os.getenv['S3_BUCKET_ROOT']}/{epoch}000/ data/raw"
+        sync_cmd = f"aws s3 sync s3://{os.getenv('S3_BUCKET_ROOT')}/{epoch}000/ data/raw"
         rc = os.system(sync_cmd)
         if rc:
             return "Error"
