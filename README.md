@@ -1,5 +1,4 @@
 # s3-sync-ui
-
 ## Summary
 
 This is an utility to sync data from AWS S3 bucket to local directory using `aws s3 sync` command.
